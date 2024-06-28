@@ -1,0 +1,63 @@
+*::after{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+*::selection{
+  background-color: #e4c8e7;
+  color: #7e7e7e;
+}
+
+body{
+  background-color: hsl(292, 24%, 82%);
+  font-family: Arial;
+}
+
+.card{
+  width: 320px;
+  margin: 40px auto;
+  background-color: #fff;
+  padding: 20px;
+  box-shadow: 0 0 5px rgb(79, 64, 64);
+  border-radius: 10px;
+}
+
+.card_title{
+  text-align: center;
+  padding-bottom: 7px;
+  margin-bottom: 15px;
+}
+
+.card_title::before,
+.card_title::after{
+  content: "";
+  display: block;
+  width: 100%;
+  height: 3px;
+  background-color: rgb(154, 137, 137);
+}
+
+ul{
+  counter-reset: adso;
+}
+
+li{
+  list-style: none;
+  padding: 0;
+  margin-bottom: 10px;
+}
+
+li::before{
+  content: counter(adso);
+  counter-increment: adso;
+  background-color: #e4c8e7;
+  width: 30px;
+  height: 30px;
+  display: inline-block;
+  color: #7e7e7e;
+  text-align: center;
+  line-height: 30px;
+  border-radius: 50%;
+  margin-right: 5px;
+}

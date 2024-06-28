@@ -1,0 +1,45 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  width: 90%;
+  margin: 0 auto;
+}
+
+.box{
+  display: block;
+  background-color: steelblue;
+  width: 55px;
+  height: 55px;
+  margin: 10px 0;
+  text-align: center;
+  line-height: 55px;
+  color: #fff;
+  font-weight: bold;
+}
+
+.container{
+  margin-left: -5px;
+  padding: 10px 0;
+  border: 10px solid crimson;
+}
+
+/* .box:only-of-type{
+  background-color: tomato;
+} */
+
+/* .box:first-of-type{
+  background-color: tomato;
+} */
+
+/* .box:last-of-type{
+  background-color: tomato;
+} */
+
+.box:nth-child(2n+1){
+  background-color: tomato;
+}
+
